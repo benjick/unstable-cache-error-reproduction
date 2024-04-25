@@ -20,6 +20,7 @@ async function get() {
 export async function update() {
   await sleep(500);
   database.value++;
+  console.log(`Updated value to ${database.value}`);
   revalidateTag(`test-cache-value`);
 }
 
