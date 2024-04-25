@@ -7,6 +7,8 @@ export const cached = memoize(get, {
   persist: true,
   duration: 60,
   revalidateTags: () => [`test-cache-value`],
+  log: ["dedupe", "datacache", "verbose"],
+  logid: "Query Data",
 });
 
 const database = {
