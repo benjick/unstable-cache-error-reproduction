@@ -1,12 +1,23 @@
-import { cached } from "./cached";
-import { Form } from "./form";
+import Link from "next/link";
 
-export default async function Page() {
-  const value = await cached();
+export default function Page() {
   return (
     <main>
-      <p>{value}</p>
-      <Form />
+      <ul>
+        <li>
+          <Link
+            href="/better-unstable-cache"
+            className="underline underline-offset-2"
+          >
+            better-unstable-cache
+          </Link>
+        </li>
+        <li>
+          <Link href="/unstable_cache" className="underline underline-offset-2">
+            unstable_cache
+          </Link>
+        </li>
+      </ul>
     </main>
   );
 }

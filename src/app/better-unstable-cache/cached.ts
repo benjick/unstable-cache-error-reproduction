@@ -22,7 +22,7 @@ async function get() {
 export async function update() {
   await sleep(500);
   database.value++;
-  console.log(`Updated value to ${database.value}`);
+  console.log(`Updated value to ${database.value} (better-unstable-cache)`);
   revalidateTag(`test-cache-value`);
 }
 
