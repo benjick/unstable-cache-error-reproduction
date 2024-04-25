@@ -6,7 +6,7 @@
 4. Go to http://localhost:3000
 5. Press the button and see the updated value
 
-## Break it (next@14.)
+## Break it (next@14.2.3)
 
 1. Update next: `pnpm update next@latest`
 2. Run the app: `pnpm dev`
